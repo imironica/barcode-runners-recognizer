@@ -92,7 +92,7 @@ for filename in filenameImages:
         else:
             pathImageProcessed = os.path.join(folderProcessedImages, 'NOTOK', filename)
         height, width = imageProcessed.shape[:2]
-        res = cv2.resize(imageProcessed, (int(width / 5), int(height / 5)))
+        res = cv2.resize(imageProcessed, (int(width / 8), int(height / 8)))
         cv2.imwrite(pathImageProcessed, res)
 
     index = index + 1
